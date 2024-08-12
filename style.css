@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background: #070707;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  width: 90%;
+  margin: 40px auto;
+  height: auto;
+}
+
+.logo {
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo img {
+  width: 100%;
+  vertical-align: top;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+.app {
+  border: solid 2px rgba(68, 248, 101, 0.25);
+  min-width: fit-content;
+  padding: 20px; 
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(34, 255, 5, 0.597); 
+}
+
+.app .fila {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.app .col {
+  width: 50%;
+  color: #c5e2eb;
+}
+
+.app label {
+  line-height: 40px;
+}
+
+.app input {
+  text-align: center;
+  border: none;
+}
+
+.app .btn {
+  width: 100%;
+  background: #225667;
+  color: #f0f3f4;
+  display: inline-block;
+  height: 40px;
+  vertical-align: top;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.app .btn:hover {
+  background: #30302f;
+}
+
+.app .btn.false {
+  background: #c957f3;
+}
+
+.app .numero-caracteres {
+  flex-direction: row;
+}
+
+.app .numero-caracteres .col {
+  flex: 1;
+}
+
+.app .numero-caracteres input[type="text"] {
+  height: 40px;
+  width: 100%;
+  cursor: default;
+  background: #174a5e;
+  color: #f8f1f1;
+  border-radius: 10px;
+}
+
+.app .numero-caracteres input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.app .numero-caracteres .col input[type="text"] {
+  text-align: center;
+}
+
+.app .numero-caracteres .col input[type="range"] {
+  width: calc(100% - 10px);
+}
+
+.app .opciones {
+  margin-bottom: 20px;
+}
+
+.app .opciones .col {
+  flex: 1;
+  text-align: center;
+}
+
+.app .opciones .btn-s {
+  border: 2px solid #fff;
+  height: 30px;
+  width: 30px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.app .opciones .btn-s.active {
+  background-color: #60bad7;
+  border-color: #60bad7;
+}
+
+.app .opciones .btn-s i {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.app .opciones .btn-s.active i {
+  color: #fff;
+}
+
+.app .fila.generar {
+  margin-bottom: 10px;
+}
+
+.app .fila.generar .col:nth-child(1) {
+  width: 30%;
+}
+
+.app .fila.generar .col:nth-child(2) {
+  width: 65%;
+}
+
+.app .fila.generar .btn.btn-generar {
+  width: 100%;
+  height: 40px;
+  font-size: 22px;
+  padding: 0;
+  line-height: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.app .fila.generar .btn.btn-generar i {
+  margin-left: 20px;
+  position: relative;
+  top: -1px;
+  font-size: 14px;
+}
+
+.app .fila.generar .btn.btn-generar:after {
+  content: "";
+  display: inline-block;
+  background: #dde0e0;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 8px;
+  right: -12px;
+  transform: rotate(45deg);
+  z-index: 9;
+  transition: all 0.3s ease;
+}
+
+.app .fila.generar .btn.btn-generar:hover:after {
+  background: #40ff1a;
+}
+
+.app .fila.generar .input-password {
+  min-width: 370px;
+  box-sizing: border-box;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid rgba(65, 250, 65, 1);
+  color: #67ec46;
+  height: 50px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: #2ef114;
+}
+
+.app .fila.generar .input-password:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.app .fila.generar input::selection {
+  background: #212139;
+}
+
+.app .fila.generar input::-moz-selection {
+  background: #212139;
+}
+
+.app .fila.alerta {
+  justify-content: flex-end;
+}
+
+.app .fila.alerta .col {
+  width: 65%;
+}
+
+.app .fila.alerta .alerta-copiado {
+  text-align: center;
+  color: rgba(247, 242, 242, 0); /* Oculto por defecto */
+  transition: all 0.3s ease;
+}
+
+.app .fila.alerta .alerta-copiado.active {
+  color: rgba(255, 255, 255, 1); /* Visible cuando se activa */
+}
+
+.app .fila.alerta .alerta-copiado p,
+.app .fila.alerta .alerta-copiado i {
+  font-size: 16px;
+}
+
+.creditos { 
+   
+  
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+  .app .fila {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .app .fila .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .app .fila.generar {
+    border-top: 3px solid rgba(255, 255, 255, 0.25);
+    padding-top: 40px;
+  }
+
+  .app .fila.generar .col:nth-child(1),
+  .app .fila.generar .col:nth-child(2) {
+    width: 100%;
+  }
+
+ 
+  .app .fila.generar .btn.btn-generar:after {
+    content: none;
+  }
+}

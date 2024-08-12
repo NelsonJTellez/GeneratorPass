@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador Contraseñas</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+  <div class="contenedor">
+    <div class="logo">
+      <h1>Generador de Contraseñas</h1>
+    </div>
+    <form action="" class="app" id="app">
+      <div class="fila opciones">
+        <div class="col">
+          <label for="simbolos">Símbolos</label>
+          <button class="btn-s" id="btn-simbolos" aria-label="Incluir símbolos"><i class="check"></i></button>
+        </div>
+        <div class="col">
+          <label for="numeros">Números</label>
+          <button class="btn-s" id="btn-numeros" aria-label="Incluir números"><i class="check"></i></button>
+        </div>
+        <div class="col">
+          <label for="mayusculas">Mayúsculas</label>
+          <button class="btn-s" id="btn-mayusculas" aria-label="Incluir mayúsculas"><i class="check"></i></button>
+        </div>
+      </div>
+      <div class="fila numero-caracteres">
+        <div class="col">
+          <label for="numero-caracteres">Número de caracteres:</label>
+        </div>
+        <div class="col">
+          <input type="range" id="rango-caracteres" min="8" max="36" value="8">
+          <input type="text" id="numero-caracteres" readonly value="8">
+        </div>
+      </div>
+      <div class="fila generar">
+        <div class="col">
+          <button class="btn btn-generar" id="btn-generar">Generar <i class="lock"></i></button>
+        </div>
+        <div class="col">
+          <input type="text" class="input-password" id="input-password" readonly value="password">
+        </div>
+      </div>
+      <div class="fila alerta">
+        <div class="col">
+          <div class="alerta-copiado" id="alerta-copiado">
+            <p><i class="copy"></i>Copia exitosa !!!.   </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  </form>
+  <div class="creditos">
+    <p>By: Nelson J Téllez</p>
+</body>
+</html>
