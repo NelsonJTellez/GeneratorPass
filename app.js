@@ -22,6 +22,7 @@
       const icon = button.querySelector('i');
       icon.classList.toggle('check', state);
       icon.classList.toggle('times', !state);
+      configuracion.minusculas = true;
     };
   
     const actualizarConfiguracion = (propiedad) => {
