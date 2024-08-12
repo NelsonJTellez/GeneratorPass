@@ -8,11 +8,16 @@ Este es un generador de contraseñas implementado en Vanilla JavaScript. El obje
 Características
 ----------------
 
-Generación Aleatoria: Crea contraseñas aleatorias utilizando caracteres alfanuméricos y símbolos especiales.
-Configuración de Longitud: Permite al usuario definir la longitud deseada para la contraseña.
-Opciones Personalizadas: Incluye opciones para incluir letras mayúsculas, minúsculas, números y caracteres especiales.
-Interfaz Simple: Una interfaz de usuario intuitiva para generar y copiar contraseñas fácilmente.
+Generación Aleatoria: 
+* Crea contraseñas aleatorias utilizando caracteres alfanuméricos y símbolos especiales.
+* Configuración de Longitud: Permite al usuario definir la longitud deseada para la contraseña.
+* Opciones Personalizadas: Incluye opciones para incluir letras mayúsculas, minúsculas, números y caracteres especiales.
+* Interfaz Simple: Una interfaz de usuario intuitiva para generar y copiar contraseñas fácilmente.
+  
+-----------
 Instalación
+-----------
+
 Clona el Repositorio
 
 Abre tu terminal y ejecuta el siguiente comando para clonar el repositorio:
